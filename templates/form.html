@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </head>
+  <body class="text-center">
+  <h2>文字列を結合します!</h2>
+  <form action="/join_text" method="POST">
+    <label for="moji_A">文字列 A </label>
+    <input type="text" name="moji_A"></label>
+
+    <label for="moji_B">文字列 B </label>
+    <input type="text" name="moji_B">
+    <p><input type="submit" value="送信"></p>
+  </form>
+  <p>結合された文字列：{{ moji_A}}{{moji_B}}</p>
+  </body>
+</html>
